@@ -1,0 +1,12 @@
+import numpy as np
+print("=====================================================================")
+print("--------------------------------------------------------------------")
+print("| Univ.Huallpa Quino Mauricio Rodrigo                LAB8  ETN307L |")
+print("| Univ.Zambrana Morales Ana Paola                                  |")
+print("--------------------------------------------------------------------")
+print("3 Resolver el circuito")
+A = np.array([[-1,1,0,0,0,0,0],[0,1,-1,0,0,0,0],[0,12,-5,0,-7,0,0],[0,-5,8,-3,0,0,0],[0,0,-3,9,-4,-2,0],[0,-7,0,-4,11,0,-2],[0,0,0,-2,0,3,0]])  #array para coheficientes de las ecuaciones
+B = np.array([72,9,0,3,2,-8,-1])          #array para las soliuciones de las ecuaciones
+X = np.linalg.solve(A,B)
+print(X)
+print("                 Ur ^ ")
