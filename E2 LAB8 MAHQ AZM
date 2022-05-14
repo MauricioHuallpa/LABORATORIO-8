@@ -1,0 +1,12 @@
+import numpy as np
+print("=====================================================================")
+print("--------------------------------------------------------------------")
+print("| Univ.Huallpa Quino Mauricio Rodrigo                LAB8  ETN307L |")
+print("| Univ.Zambrana Morales Ana Paola                                  |")
+print("--------------------------------------------------------------------")
+print("2 Resolver Corrientes")
+A = np.array([[8,-1],[-1,8]])  #array para coheficientes de las ecuaciones
+B = np.array([51,36])          #array para las soliuciones de las ecuaciones
+X = np.linalg.solve(A,B)
+print(X)
+print("     I1         I2         ")
