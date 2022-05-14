@@ -1,0 +1,12 @@
+import numpy as np
+print("=====================================================================")
+print("--------------------------------------------------------------------")
+print("| Univ.Huallpa Quino Mauricio Rodrigo                LAB8  ETN307L |")
+print("| Univ.Zambrana Morales Ana Paola                                  |")
+print("--------------------------------------------------------------------")
+print("7 Resolver el circuito")
+A = np.array([[5,0,8,-6,0,0],[0,3,-6,6,1,0],[-1,0,3,0,0,0],[0,-1,0,1,0,-5],[5,0,0,0,0,-1],[0,0,2,0,1,0]])  #array para coheficientes de las ecuaciones
+B = np.array([-5,5,2,0,0,0])          #array para las soliuciones de las ecuaciones
+X = np.linalg.solve(A,B)  # calculamos el sistema de ecuaciones
+print(X)
+print("       I1          I2           I3          I4          VX           VY ")
