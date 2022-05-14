@@ -1,0 +1,30 @@
+import numpy as np
+print("=====================================================================")
+print("--------------------------------------------------------------------")
+print("| Univ.Huallpa Quino Mauricio Rodrigo                LAB8  ETN307L |")
+print("| Univ.Zambrana Morales Ana Paola                                  |")
+print("--------------------------------------------------------------------")
+print("4 Resolver el circuito")
+n2=1
+n1=2
+r=n2/n1  #relacion del transformador
+I=10
+c1=1
+c2=2j   #reactancias
+c3=2j
+c4=1
+ceq=(c1*r*r)+(c2*r*r)+c3+c4  #impedancia equivalente
+ceqR=ceq+60    #impedancia para Hallar VL
+print("Impedancia equivalente : ",ceq)
+Vg=(I*ceqR)/r
+print("Valor de Vg : ",Vg)
+VL=r*Vg
+print("Valor de VL : ",VL)
+
+print("Si el valor de La impedancia equivalente es  0 + 0j")
+c2eq=60  # solo analizamos la impedancia en cuestion para VL
+print("Impedancia equivalente : ",c2eq)
+Vg=(I*c2eq)/r
+print("Valor de Vg : ",Vg)
+VL=r*Vg
+print("Valor de VL : ",VL)
