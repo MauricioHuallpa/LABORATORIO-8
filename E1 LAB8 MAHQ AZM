@@ -1,0 +1,32 @@
+import numpy as np
+print("=====================================================================")
+print("--------------------------------------------------------------------")
+print("| Univ.Huallpa Quino Mauricio Rodrigo                LAB8  ETN307L |")
+print("| Univ.Zambrana Morales Ana Paola                                  |")
+print("--------------------------------------------------------------------")
+print("1- Resolver Corrientes")
+R1=input("Introducir valor de Resistencia 1 : ")
+R1=float(R1)
+R2=input("Introducir valor de Resistencia 2 : ")
+R2=float(R2)
+R3=input("Introducir valor de Resistencia 3 : ") # pedimos todos los datos
+R3=float(R3)
+R4=input("Introducir valor de Resistencia 4 : ")
+R4=float(R4)
+R5=input("Introducir valor de Resistencia 5 : ")
+R5=float(R5)
+R6=input("Introducir valor de Resistencia 6 : ")
+R6=float(R6)
+V1=input("Introducir valor de Fuente 1 : ")
+V1=float(V1)
+V2=input("Introducir valor de Fuente 2 : ")
+V2=float(V2)
+V3=input("Introducir valor de Fuente 3 : ")
+V3=float(V3)
+V4=input("Introducir valor de Fuente 4 : ")
+V4=float(V4)
+A = np.array([[(R1+R4+R5),-R5,R4],[-R5,(R5+R2+R6),R6],[-R4,-R6,(R4+R3+R6)]])#Array de Coheficientes
+B = np.array([V1-V4, -V2, V3+V4])  # Array de resultados
+X = np.linalg.solve(A,B)    # resolvemos el sistema de ecuaciones
+print(X)
+print("     I1         I2          I3")
