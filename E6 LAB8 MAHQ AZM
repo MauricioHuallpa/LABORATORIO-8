@@ -1,0 +1,11 @@
+import numpy as np
+print("=====================================================================")
+print("--------------------------------------------------------------------")
+print("| Univ.Huallpa Quino Mauricio Rodrigo                LAB8  ETN307L |")
+print("| Univ.Zambrana Morales Ana Paola                                  |")
+print("--------------------------------------------------------------------")
+print("6 Resolver el circuito")
+IB=10.8/(480*(10**3))
+print("La corriente de la Base es : ",IB)
+FA=(226*(10**(-3)))/IB
+print("El Factor de Amplificacion es : ",FA)
